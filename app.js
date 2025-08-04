@@ -12,13 +12,15 @@ app.get("/", (req, res) => {
 });
 const start = async (uri) => {
   try {
-    await connectDB(process.env.MONGODB_URL);
+    await connectDB(uri);
     const PORT = 5000;
     app.listen(PORT, () => {
-      console.log( `Yes I am Connected`);
+      console.log(`✅ Server is running on http://localhost:${PORT}`);
     });
   } catch (error) {
     console.log(error);
   }
 };
-start();
+
+start(process.env.MONGODB_URL); // ✅ this fixes your issue
+
