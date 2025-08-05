@@ -1,0 +1,29 @@
+# Ignore node modules (for Node.js projects)
+node_modules/
+
+# Ignore build and log files
+dist/
+build/
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache (if using Python)
+__pycache__/
+*.py[cod]
+
+# Ignore environment files
+.env
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore compiled files
+*.class
+*.exe
+*.dll
+*.o
+*.so
+*.out
